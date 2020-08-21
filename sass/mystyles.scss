@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+
+// Update Bulma's global variables
+$family-sans-serif: "Montserrat", sans-serif;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$title-color: #000000;
+$title-size: 4.5rem;
+$subtitle-color: #000000;
+$text: #000000;
+
+.title {
+  letter-spacing: 0.1em;
+}
+
+.is-clickable {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.image:hover .overlay-text {
+  opacity: 1;
+}
+
+.image:hover .overlay {
+  opacity: 0.5;
+}
+
+// Import only what you need from Bulma
+@import "../bulma/bulma.sass";
