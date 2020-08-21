@@ -1,2 +1,2 @@
-# Dominik-Strasser.github.io
+# dominik-strasser.github.io
 My Portfolio
