@@ -60,15 +60,11 @@ $text: #000000;
   opacity: 0.5;
 }
 
-.image:active .overlay-text {
+.overlay-text-toggle{
   opacity: 1;
 }
 
-.image:active .overlay {
-  opacity: 0.5;
-}
-
-.overlay-hide{
+.overlay-toggle{
   opacity: 0.5;
 }
 

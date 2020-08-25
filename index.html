@@ -35,9 +35,11 @@
             <figure class="image is-2by3 is-clickable thumbnail1">
               <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
-              <h1 class="title is-size-4 has-text-white overlay-text">
-                Stylized House
-              </h1>
+              <span class="overlay-text">
+                <h1 class="title is-size-4 has-text-white">
+                  Stylized House
+                </h1>
+              </span>
             </figure>
           </a>
         </div>
@@ -47,9 +49,11 @@
             <figure class="image is-2by3 is-clickable thumbnail2">
               <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
-              <h1 class="title is-size-4 has-text-white overlay-text">
-                Stylized House
-              </h1>
+              <span class="overlay-text">
+                <h1 class="title is-size-4 has-text-white">
+                  Stylized House
+                </h1>
+              </span>
             </figure>
           </a>
         </div>
@@ -59,9 +63,11 @@
             <figure class="image is-2by3 is-clickable thumbnail3">
               <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
-              <h1 class="title is-size-4 has-text-white overlay-text">
-                Stylized House
-              </h1>
+              <span class="overlay-text">
+                <h1 class="title is-size-4 has-text-white">
+                  Stylized House
+                </h1>
+              </span>
             </figure>
           </a>
         </div>
@@ -125,13 +131,16 @@
 
     <script>
       document.querySelector(".thumbnail1").ontouchstart = function (e) {
-	      document.querySelector(".thumbnail1").querySelector(".overlay").classList.toggle("overlay-hide");
+	      document.querySelector(".thumbnail1").querySelector(".overlay").classList.toggle("overlay-toggle");
+        document.querySelector(".thumbnail1").querySelector(".overlay-text").classList.toggle("overlay-text-toggle");
       }
       document.querySelector(".thumbnail2").ontouchstart = function (e) {
-	      document.querySelector(".thumbnail2").querySelector(".overlay").classList.toggle("overlay-hide");
+	      document.querySelector(".thumbnail2").querySelector(".overlay").classList.toggle("overlay-toggle");
+        document.querySelector(".thumbnail2").querySelector(".overlay-text").classList.toggle("overlay-text-toggle");
       }
-      document.querySelector(".thumbnail2").ontouchstart = function (e) {
-	      document.querySelector(".thumbnail2").querySelector(".overlay").classList.toggle("overlay-hide");
+      document.querySelector(".thumbnail3").ontouchstart = function (e) {
+	      document.querySelector(".thumbnail3").querySelector(".overlay").classList.toggle("overlay-toggle");
+        document.querySelector(".thumbnail3").querySelector(".overlay-text").classList.toggle("overlay-text-toggle");
       }
     </script>
 
