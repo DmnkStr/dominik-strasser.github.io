@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dominik Strasser Version 5</title>
+    <title>Dominik Strasser Version 6</title>
     <link rel="stylesheet" href="css/mystyles.css">
   </head>
   <body>
@@ -127,9 +127,11 @@
       document.querySelector(".thumbnail1").ontouchstart = function (e) {
 	      document.querySelector(".thumbnail1").querySelector(".overlay").classList.toggle("overlay-hide");
       }
-
-      document.querySelector(".thumbnail1").ontouchend = function (e) {
-	      document.querySelector(".thumbnail1").querySelector(".overlay-hide").classList.toggle("overlay");
+      document.querySelector(".thumbnail2").ontouchstart = function (e) {
+	      document.querySelector(".thumbnail2").querySelector(".overlay").classList.toggle("overlay-hide");
+      }
+      document.querySelector(".thumbnail2").ontouchstart = function (e) {
+	      document.querySelector(".thumbnail2").querySelector(".overlay").classList.toggle("overlay-hide");
       }
     </script>
 
