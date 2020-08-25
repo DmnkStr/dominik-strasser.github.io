@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dominik Strasser Version 4</title>
+    <title>Dominik Strasser Version 5</title>
     <link rel="stylesheet" href="css/mystyles.css">
   </head>
   <body>
@@ -32,7 +32,7 @@
 
         <div class="column">
           <a href="#art1">
-            <figure class="image is-2by3 is-clickable">
+            <figure class="image is-2by3 is-clickable thumbnail1">
               <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
               <h1 class="title is-size-4 has-text-white overlay-text">
@@ -44,7 +44,7 @@
 
         <div class="column">
           <a href="#art2">
-            <figure class="image is-2by3 is-clickable">
+            <figure class="image is-2by3 is-clickable thumbnail2">
               <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
               <h1 class="title is-size-4 has-text-white overlay-text">
@@ -56,7 +56,7 @@
 
         <div class="column">
           <a href="#art3">
-            <figure class="image is-2by3 is-clickable">
+            <figure class="image is-2by3 is-clickable thumbnail3">
               <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
               <h1 class="title is-size-4 has-text-white overlay-text">
@@ -124,8 +124,12 @@
   </section>
 
     <script>
-      document.querySelector(".image").ontouchstart = function (e) {
-	      document.querySelector(".overlay").classList.toggle("overlay-hide");
+      document.querySelector(".thumbnail1").ontouchstart = function (e) {
+	      document.querySelector(".thumbnail1").querySelector(".overlay").classList.toggle("overlay-hide");
+      }
+
+      document.querySelector(".thumbnail1").ontouchend = function (e) {
+	      document.querySelector(".thumbnail1").querySelector(".overlay-hide").classList.toggle("overlay");
       }
     </script>
 
