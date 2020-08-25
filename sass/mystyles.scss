@@ -60,6 +60,14 @@ $text: #000000;
   opacity: 0.5;
 }
 
+.image:active .overlay-text {
+  opacity: 1;
+}
+
+.image:active .overlay {
+  opacity: 0.5;
+}
+
 .image-text {
   position: absolute;
   top: 10%;
