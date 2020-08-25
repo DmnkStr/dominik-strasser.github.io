@@ -60,5 +60,15 @@ $text: #000000;
   opacity: 0.5;
 }
 
+.image-text {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: -40%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
 // Import only what you need from Bulma
 @import "../bulma/bulma.sass";
