@@ -20,7 +20,7 @@ $subtitle-color: #000000;
 $text: #000000;
 
 .title {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .is-clickable {
@@ -57,7 +57,7 @@ $text: #000000;
 }
 
 .image:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .overlay-text-toggle{
@@ -65,7 +65,7 @@ $text: #000000;
 }
 
 .overlay-toggle{
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .image-text {
