@@ -33,7 +33,7 @@
         <div class="column">
           <a href="#art1">
             <figure class="image is-2by3 is-clickable">
-              <img src="images/HouseThumbnail.jpg">
+              <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
               <h1 class="title is-size-4 has-text-white overlay-text">
                 Stylized House
@@ -45,7 +45,7 @@
         <div class="column">
           <a href="#art2">
             <figure class="image is-2by3 is-clickable">
-              <img src="https://cdna.artstation.com/p/assets/images/images/021/398/572/large/dominik-strasser-thumbnail.jpg?1571530488">
+              <img src="images/HouseGreyThumbnail.jpg">
               <div class="overlay"></div>
               <h1 class="title is-size-4 has-text-white overlay-text">
                 Hello
@@ -99,7 +99,7 @@
       <br/>
 
       <figure class="image">
-        <img src="images/House.jpg">
+        <img src="images/HouseGrey.jpg">
         <h1 class="title has-text-white is-size-4 image-text">
           Day
         </h1>
@@ -108,7 +108,7 @@
       <br/>
 
       <figure class="image">
-        <img src="images/HouseNight.jpg">
+        <img src="images/HouseGreyNight.jpg">
         <h1 class="title has-text-white is-size-4 image-text">
           Night
         </h1>
@@ -122,6 +122,12 @@
 
     </div>
   </section>
+
+  <script>
+    document.querySelector(".overlay").ontouchstart = function (e) {
+    	document.querySelector(".box .hover-button").classList.toggle("touch-button");
+    }
+  </script>
 
   </body>
 </html>
