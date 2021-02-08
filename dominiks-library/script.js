@@ -5,7 +5,10 @@
 $(document).ready(function(){
   $.getJSON("https://raw.githubusercontent.com/Dominik-Strasser/Dominik-Strasser.github.io/master/dominiks-library/data.json", function(data) {
     console.log(data);
-
-  });
+    console.log("Hello");
+  })
+  .fail(function(error) {
+    console.log("error");
+  })
 
 });
