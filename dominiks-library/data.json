@@ -1,1 +1,7 @@
-{"a" : "b", "c" : "d"}
+{
+  materials:
+  [
+    {"name": "Natural Painted Wood"},
+    {"name": "Smushed Gold"}
+  ]
+}
